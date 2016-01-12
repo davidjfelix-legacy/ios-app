@@ -15,6 +15,9 @@
 		0C9F8BC21C4186D60016C9BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9F8BC01C4186D60016C9BE /* LaunchScreen.storyboard */; };
 		0C9F8BCD1C4186D60016C9BE /* FeastedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F8BCC1C4186D60016C9BE /* FeastedTests.swift */; };
 		0C9F8BD81C4186D60016C9BE /* FeastedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F8BD71C4186D60016C9BE /* FeastedUITests.swift */; };
+		0CD642601C41937800A3EB66 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD6425D1C41937800A3EB66 /* FBSDKCoreKit.framework */; };
+		0CD642611C41937800A3EB66 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD6425E1C41937800A3EB66 /* FBSDKLoginKit.framework */; };
+		0CD642621C41937800A3EB66 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD6425F1C41937800A3EB66 /* FBSDKShareKit.framework */; };
 		230FE5E29FD694D8C8FB60D3 /* Pods_Feasted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E897B260F247EEB9E55B2128 /* Pods_Feasted.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,9 @@
 		0C9F8BD31C4186D60016C9BE /* FeastedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeastedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9F8BD71C4186D60016C9BE /* FeastedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeastedUITests.swift; sourceTree = "<group>"; };
 		0C9F8BD91C4186D60016C9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CD6425D1C41937800A3EB66 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		0CD6425E1C41937800A3EB66 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		0CD6425F1C41937800A3EB66 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		B0F67907F528092F17256960 /* Pods-Feasted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feasted.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feasted/Pods-Feasted.debug.xcconfig"; sourceTree = "<group>"; };
 		B848A1FAB7AF0026E8BA285E /* Pods-Feasted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feasted.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feasted/Pods-Feasted.release.xcconfig"; sourceTree = "<group>"; };
 		E897B260F247EEB9E55B2128 /* Pods_Feasted.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feasted.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CD642621C41937800A3EB66 /* FBSDKShareKit.framework in Frameworks */,
 				230FE5E29FD694D8C8FB60D3 /* Pods_Feasted.framework in Frameworks */,
+				0CD642601C41937800A3EB66 /* FBSDKCoreKit.framework in Frameworks */,
+				0CD642611C41937800A3EB66 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +156,9 @@
 		7AE933E7D5399045B89CB449 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0CD6425D1C41937800A3EB66 /* FBSDKCoreKit.framework */,
+				0CD6425E1C41937800A3EB66 /* FBSDKLoginKit.framework */,
+				0CD6425F1C41937800A3EB66 /* FBSDKShareKit.framework */,
 				E897B260F247EEB9E55B2128 /* Pods_Feasted.framework */,
 			);
 			name = Frameworks;
@@ -479,6 +491,10 @@
 			baseConfigurationReference = B0F67907F528092F17256960 /* Pods-Feasted.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Feasted/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Dinner-Solutions-LLC.Feasted";
@@ -491,6 +507,10 @@
 			baseConfigurationReference = B848A1FAB7AF0026E8BA285E /* Pods-Feasted.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Feasted/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Dinner-Solutions-LLC.Feasted";
