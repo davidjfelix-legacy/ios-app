@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C81611C1C4F4988003E0C94 /* FeastedApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C81611B1C4F4988003E0C94 /* FeastedApi.swift */; };
+		0C81611D1C4F4988003E0C94 /* FeastedApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C81611B1C4F4988003E0C94 /* FeastedApi.swift */; };
+		0C8161201C4F4CFF003E0C94 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C81611F1C4F4CFF003E0C94 /* APIManager.swift */; };
+		0C8161211C4F4CFF003E0C94 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C81611F1C4F4CFF003E0C94 /* APIManager.swift */; };
+		0C8161261C4F4F70003E0C94 /* FeastedHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8161251C4F4F70003E0C94 /* FeastedHttpClient.swift */; };
+		0C8161271C4F4F70003E0C94 /* FeastedHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8161251C4F4F70003E0C94 /* FeastedHttpClient.swift */; };
+		0C8CDCB61C4F534600A02B9F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8CDCB51C4F534600A02B9F /* Alamofire.framework */; };
+		0C8CDCB91C4F536100A02B9F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8CDCB71C4F536100A02B9F /* Fabric.framework */; };
+		0C8CDCBA1C4F536100A02B9F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8CDCB81C4F536100A02B9F /* Crashlytics.framework */; };
 		0C9F8BB51C4186D60016C9BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F8BB41C4186D60016C9BE /* AppDelegate.swift */; };
 		0C9F8BB71C4186D60016C9BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F8BB61C4186D60016C9BE /* ViewController.swift */; };
 		0C9F8BBA1C4186D60016C9BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9F8BB81C4186D60016C9BE /* Main.storyboard */; };
@@ -18,6 +27,12 @@
 		0CD642601C41937800A3EB66 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD6425D1C41937800A3EB66 /* FBSDKCoreKit.framework */; };
 		0CD642611C41937800A3EB66 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD6425E1C41937800A3EB66 /* FBSDKLoginKit.framework */; };
 		0CD642621C41937800A3EB66 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD6425F1C41937800A3EB66 /* FBSDKShareKit.framework */; };
+		0CE6CDFB1C4F44F300D625CD /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE6CDFA1C4F44F300D625CD /* AuthManager.swift */; };
+		0CE6CDFC1C4F44F300D625CD /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE6CDFA1C4F44F300D625CD /* AuthManager.swift */; };
+		0CE6CDFF1C4F47D500D625CD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE6CDFE1C4F47D500D625CD /* User.swift */; };
+		0CE6CE001C4F47D500D625CD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE6CDFE1C4F47D500D625CD /* User.swift */; };
+		0CE6CE021C4F47F300D625CD /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE6CE011C4F47F300D625CD /* Token.swift */; };
+		0CE6CE031C4F47F300D625CD /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE6CE011C4F47F300D625CD /* Token.swift */; };
 		230FE5E29FD694D8C8FB60D3 /* Pods_Feasted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E897B260F247EEB9E55B2128 /* Pods_Feasted.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +54,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C81611B1C4F4988003E0C94 /* FeastedApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeastedApi.swift; sourceTree = "<group>"; };
+		0C81611F1C4F4CFF003E0C94 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		0C8161251C4F4F70003E0C94 /* FeastedHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeastedHttpClient.swift; sourceTree = "<group>"; };
+		0C8CDCB51C4F534600A02B9F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		0C8CDCB71C4F536100A02B9F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		0C8CDCB81C4F536100A02B9F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		0C9F8BB11C4186D60016C9BE /* Feasted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feasted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9F8BB41C4186D60016C9BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C9F8BB61C4186D60016C9BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +78,9 @@
 		0CD6425E1C41937800A3EB66 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		0CD6425F1C41937800A3EB66 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		0CD642631C44C1BD00A3EB66 /* Feasted-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Feasted-Bridging-Header.h"; sourceTree = "<group>"; };
+		0CE6CDFA1C4F44F300D625CD /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		0CE6CDFE1C4F47D500D625CD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0CE6CE011C4F47F300D625CD /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		B0F67907F528092F17256960 /* Pods-Feasted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feasted.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feasted/Pods-Feasted.debug.xcconfig"; sourceTree = "<group>"; };
 		B848A1FAB7AF0026E8BA285E /* Pods-Feasted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feasted.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feasted/Pods-Feasted.release.xcconfig"; sourceTree = "<group>"; };
 		E897B260F247EEB9E55B2128 /* Pods_Feasted.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feasted.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,10 +91,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8CDCB61C4F534600A02B9F /* Alamofire.framework in Frameworks */,
 				0CD642621C41937800A3EB66 /* FBSDKShareKit.framework in Frameworks */,
 				230FE5E29FD694D8C8FB60D3 /* Pods_Feasted.framework in Frameworks */,
 				0CD642601C41937800A3EB66 /* FBSDKCoreKit.framework in Frameworks */,
 				0CD642611C41937800A3EB66 /* FBSDKLoginKit.framework in Frameworks */,
+				0C8CDCB91C4F536100A02B9F /* Fabric.framework in Frameworks */,
+				0C8CDCBA1C4F536100A02B9F /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +177,22 @@
 		0CE6CDF61C4F441B00D625CD /* API */ = {
 			isa = PBXGroup;
 			children = (
+				0CE6CDFD1C4F47AE00D625CD /* Model */,
+				0CE6CDFA1C4F44F300D625CD /* AuthManager.swift */,
+				0C81611B1C4F4988003E0C94 /* FeastedApi.swift */,
+				0C81611F1C4F4CFF003E0C94 /* APIManager.swift */,
+				0C8161251C4F4F70003E0C94 /* FeastedHttpClient.swift */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		0CE6CDFD1C4F47AE00D625CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CE6CDFE1C4F47D500D625CD /* User.swift */,
+				0CE6CE011C4F47F300D625CD /* Token.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		2B83A8DD297C849D68921DDB /* Pods */ = {
@@ -166,6 +207,9 @@
 		7AE933E7D5399045B89CB449 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C8CDCB71C4F536100A02B9F /* Fabric.framework */,
+				0C8CDCB81C4F536100A02B9F /* Crashlytics.framework */,
+				0C8CDCB51C4F534600A02B9F /* Alamofire.framework */,
 				0CD6425D1C41937800A3EB66 /* FBSDKCoreKit.framework */,
 				0CD6425E1C41937800A3EB66 /* FBSDKLoginKit.framework */,
 				0CD6425F1C41937800A3EB66 /* FBSDKShareKit.framework */,
@@ -187,6 +231,7 @@
 				0C9F8BAF1C4186D60016C9BE /* Resources */,
 				879F874188AD8F03D8A85CF3 /* Embed Pods Frameworks */,
 				CBEA14BF16C55ADE1FF22368 /* Copy Pods Resources */,
+				0C8CDCB41C4F51FC00A02B9F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -304,6 +349,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C8CDCB41C4F51FC00A02B9F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run f73f231b1a68bb72e97586c78b1ebaadb93d00ac a19c07390aa7f05d9f744bd52ef80a4c03a19fe4216bd128a9dd0d69c4664f48";
+		};
 		71B953E26F102E65CB2E61DF /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,8 +414,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8161261C4F4F70003E0C94 /* FeastedHttpClient.swift in Sources */,
+				0C8161201C4F4CFF003E0C94 /* APIManager.swift in Sources */,
 				0C9F8BBD1C4186D60016C9BE /* Feasted.xcdatamodeld in Sources */,
+				0CE6CDFB1C4F44F300D625CD /* AuthManager.swift in Sources */,
 				0C9F8BB71C4186D60016C9BE /* ViewController.swift in Sources */,
+				0CE6CE021C4F47F300D625CD /* Token.swift in Sources */,
+				0CE6CDFF1C4F47D500D625CD /* User.swift in Sources */,
+				0C81611C1C4F4988003E0C94 /* FeastedApi.swift in Sources */,
 				0C9F8BB51C4186D60016C9BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +430,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8161211C4F4CFF003E0C94 /* APIManager.swift in Sources */,
 				0C9F8BCD1C4186D60016C9BE /* FeastedTests.swift in Sources */,
+				0C8161271C4F4F70003E0C94 /* FeastedHttpClient.swift in Sources */,
+				0CE6CDFC1C4F44F300D625CD /* AuthManager.swift in Sources */,
+				0C81611D1C4F4988003E0C94 /* FeastedApi.swift in Sources */,
+				0CE6CE001C4F47D500D625CD /* User.swift in Sources */,
+				0CE6CE031C4F47F300D625CD /* Token.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +574,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Feasted/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -520,6 +591,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Feasted/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
