@@ -4,6 +4,8 @@ use_frameworks!
 
 target 'Feasted' do
 	pod 'Alamofire', '~> 3.0'
+	pod 'Google/SignIn'
+	pod 'Google/Analytics'
 end
 
 target 'FeastedTests' do

@@ -56,6 +56,7 @@
 		0CD6425D1C41937800A3EB66 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		0CD6425E1C41937800A3EB66 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		0CD6425F1C41937800A3EB66 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		0CD642631C44C1BD00A3EB66 /* Feasted-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Feasted-Bridging-Header.h"; sourceTree = "<group>"; };
 		B0F67907F528092F17256960 /* Pods-Feasted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feasted.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feasted/Pods-Feasted.debug.xcconfig"; sourceTree = "<group>"; };
 		B848A1FAB7AF0026E8BA285E /* Pods-Feasted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feasted.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feasted/Pods-Feasted.release.xcconfig"; sourceTree = "<group>"; };
 		E897B260F247EEB9E55B2128 /* Pods_Feasted.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feasted.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +116,7 @@
 		0C9F8BB31C4186D60016C9BE /* Feasted */ = {
 			isa = PBXGroup;
 			children = (
+				0CE6CDF61C4F441B00D625CD /* API */,
 				0C9F8BB41C4186D60016C9BE /* AppDelegate.swift */,
 				0C9F8BB61C4186D60016C9BE /* ViewController.swift */,
 				0C9F8BB81C4186D60016C9BE /* Main.storyboard */,
@@ -122,6 +124,7 @@
 				0C9F8BC01C4186D60016C9BE /* LaunchScreen.storyboard */,
 				0C9F8BC31C4186D60016C9BE /* Info.plist */,
 				0C9F8BBB1C4186D60016C9BE /* Feasted.xcdatamodeld */,
+				0CD642631C44C1BD00A3EB66 /* Feasted-Bridging-Header.h */,
 			);
 			path = Feasted;
 			sourceTree = "<group>";
@@ -142,6 +145,13 @@
 				0C9F8BD91C4186D60016C9BE /* Info.plist */,
 			);
 			path = FeastedUITests;
+			sourceTree = "<group>";
+		};
+		0CE6CDF61C4F441B00D625CD /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 		2B83A8DD297C849D68921DDB /* Pods */ = {
