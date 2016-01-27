@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C81611C1C4F4988003E0C94 /* FeastedApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C81611B1C4F4988003E0C94 /* FeastedApi.swift */; };
-		0C81611D1C4F4988003E0C94 /* FeastedApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C81611B1C4F4988003E0C94 /* FeastedApi.swift */; };
-		0C8161201C4F4CFF003E0C94 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C81611F1C4F4CFF003E0C94 /* APIManager.swift */; };
-		0C8161211C4F4CFF003E0C94 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C81611F1C4F4CFF003E0C94 /* APIManager.swift */; };
-		0C8161261C4F4F70003E0C94 /* FeastedHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8161251C4F4F70003E0C94 /* FeastedHttpClient.swift */; };
-		0C8161271C4F4F70003E0C94 /* FeastedHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8161251C4F4F70003E0C94 /* FeastedHttpClient.swift */; };
+		0C81611C1C4F4988003E0C94 /* FeastedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C81611B1C4F4988003E0C94 /* FeastedAPI.swift */; };
+		0C81611D1C4F4988003E0C94 /* FeastedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C81611B1C4F4988003E0C94 /* FeastedAPI.swift */; };
 		0C8CDCB61C4F534600A02B9F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8CDCB51C4F534600A02B9F /* Alamofire.framework */; };
 		0C8CDCB91C4F536100A02B9F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8CDCB71C4F536100A02B9F /* Fabric.framework */; };
 		0C8CDCBA1C4F536100A02B9F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8CDCB81C4F536100A02B9F /* Crashlytics.framework */; };
+		0C8CDCC01C4F595A00A02B9F /* FeastedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8CDCBF1C4F595A00A02B9F /* FeastedService.swift */; };
+		0C8CDCC11C4F595A00A02B9F /* FeastedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8CDCBF1C4F595A00A02B9F /* FeastedService.swift */; };
+		0C9DF57F1C58894E003DBF47 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9DF57E1C58894E003DBF47 /* UserRequest.swift */; };
+		0C9DF5801C58894E003DBF47 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9DF57E1C58894E003DBF47 /* UserRequest.swift */; };
 		0C9F8BB51C4186D60016C9BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F8BB41C4186D60016C9BE /* AppDelegate.swift */; };
 		0C9F8BB71C4186D60016C9BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F8BB61C4186D60016C9BE /* ViewController.swift */; };
 		0C9F8BBA1C4186D60016C9BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9F8BB81C4186D60016C9BE /* Main.storyboard */; };
@@ -54,12 +54,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C81611B1C4F4988003E0C94 /* FeastedApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeastedApi.swift; sourceTree = "<group>"; };
-		0C81611F1C4F4CFF003E0C94 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		0C8161251C4F4F70003E0C94 /* FeastedHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeastedHttpClient.swift; sourceTree = "<group>"; };
+		0C81611B1C4F4988003E0C94 /* FeastedAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeastedAPI.swift; sourceTree = "<group>"; };
 		0C8CDCB51C4F534600A02B9F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		0C8CDCB71C4F536100A02B9F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		0C8CDCB81C4F536100A02B9F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		0C8CDCBF1C4F595A00A02B9F /* FeastedService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeastedService.swift; sourceTree = "<group>"; };
+		0C9DF57E1C58894E003DBF47 /* UserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		0C9F8BB11C4186D60016C9BE /* Feasted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feasted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9F8BB41C4186D60016C9BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C9F8BB61C4186D60016C9BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +118,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C9DF57D1C58892A003DBF47 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				0C9DF57E1C58894E003DBF47 /* UserRequest.swift */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
 		0C9F8BA81C4186D60016C9BE = {
 			isa = PBXGroup;
 			children = (
@@ -177,11 +185,11 @@
 		0CE6CDF61C4F441B00D625CD /* API */ = {
 			isa = PBXGroup;
 			children = (
+				0C9DF57D1C58892A003DBF47 /* Requests */,
 				0CE6CDFD1C4F47AE00D625CD /* Model */,
 				0CE6CDFA1C4F44F300D625CD /* AuthManager.swift */,
-				0C81611B1C4F4988003E0C94 /* FeastedApi.swift */,
-				0C81611F1C4F4CFF003E0C94 /* APIManager.swift */,
-				0C8161251C4F4F70003E0C94 /* FeastedHttpClient.swift */,
+				0C81611B1C4F4988003E0C94 /* FeastedAPI.swift */,
+				0C8CDCBF1C4F595A00A02B9F /* FeastedService.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -414,14 +422,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C8161261C4F4F70003E0C94 /* FeastedHttpClient.swift in Sources */,
-				0C8161201C4F4CFF003E0C94 /* APIManager.swift in Sources */,
 				0C9F8BBD1C4186D60016C9BE /* Feasted.xcdatamodeld in Sources */,
 				0CE6CDFB1C4F44F300D625CD /* AuthManager.swift in Sources */,
+				0C9DF57F1C58894E003DBF47 /* UserRequest.swift in Sources */,
+				0C8CDCC01C4F595A00A02B9F /* FeastedService.swift in Sources */,
 				0C9F8BB71C4186D60016C9BE /* ViewController.swift in Sources */,
 				0CE6CE021C4F47F300D625CD /* Token.swift in Sources */,
 				0CE6CDFF1C4F47D500D625CD /* User.swift in Sources */,
-				0C81611C1C4F4988003E0C94 /* FeastedApi.swift in Sources */,
+				0C81611C1C4F4988003E0C94 /* FeastedAPI.swift in Sources */,
 				0C9F8BB51C4186D60016C9BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,13 +438,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C8161211C4F4CFF003E0C94 /* APIManager.swift in Sources */,
 				0C9F8BCD1C4186D60016C9BE /* FeastedTests.swift in Sources */,
-				0C8161271C4F4F70003E0C94 /* FeastedHttpClient.swift in Sources */,
 				0CE6CDFC1C4F44F300D625CD /* AuthManager.swift in Sources */,
-				0C81611D1C4F4988003E0C94 /* FeastedApi.swift in Sources */,
+				0C81611D1C4F4988003E0C94 /* FeastedAPI.swift in Sources */,
 				0CE6CE001C4F47D500D625CD /* User.swift in Sources */,
 				0CE6CE031C4F47F300D625CD /* Token.swift in Sources */,
+				0C8CDCC11C4F595A00A02B9F /* FeastedService.swift in Sources */,
+				0C9DF5801C58894E003DBF47 /* UserRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
