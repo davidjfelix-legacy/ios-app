@@ -7,10 +7,13 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class User : NSObject {
+class User : Mappable
+{
+    required init?(_ map: Map) { }
     
-    override init() {
-        // no arg constructor
+    func mapping(map: Map) {
+        
     }
 }

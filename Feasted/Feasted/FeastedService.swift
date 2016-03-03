@@ -15,8 +15,8 @@ class FeastedService: NSObject {
     private(set) var isProduction : Bool!
     
     // private static strings
-    private static let SERVER : String = "http://dinner-solutions-api"
-    private static let STAGE_SERVER : String = "https://unknown"
+    private static let SERVER : String = "http://api.davidjfelix.com/v0"
+    private static let STAGE_SERVER : String = "http://api.davidjfelix.com/v0"
     
     override init() {
         self.isProduction = false

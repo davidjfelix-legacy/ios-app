@@ -7,16 +7,18 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class Token: NSObject {
+class Token: Mappable
+{
+    var type : String?
+    var text : String?
     
-    var type : String
-    var text : String
+    required init?(_ map: Map) { }
     
-    override init() {
-        // no arg constructor
-        type = ""
-        text = ""
+    func mapping(map: Map) {
+        type <- map["type"]
+        text <- map["text"]
     }
     
     func getToken() -> String {

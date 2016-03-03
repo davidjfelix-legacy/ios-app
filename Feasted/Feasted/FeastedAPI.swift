@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-class FeastedAPI: NSObject {
+class FeastedAPI {
     
     // Singleton Variable
     static let sharedInstance = FeastedAPI()
@@ -21,7 +21,7 @@ class FeastedAPI: NSObject {
     
     // Public vars
     
-    private override init() {
+    private init() {
         self.authManager = AuthManager()
         self.service = FeastedService()
     } //This prevents others from using the default '()' initializer for this class.

@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C7E8DB11C7DEBAA0017C0CD /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E8DB01C7DEBAA0017C0CD /* MealsViewController.swift */; };
+		0C7E8DB31C7DEC730017C0CD /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E8DB21C7DEC730017C0CD /* Meal.swift */; };
+		0C7E8DBA1C7DF02E0017C0CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E8DB91C7DF02E0017C0CD /* LoginViewController.swift */; };
+		0C7E8DBC1C7E74C20017C0CD /* SplashLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E8DBB1C7E74C20017C0CD /* SplashLoginViewController.swift */; };
 		0C81611C1C4F4988003E0C94 /* FeastedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C81611B1C4F4988003E0C94 /* FeastedAPI.swift */; };
 		0C81611D1C4F4988003E0C94 /* FeastedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C81611B1C4F4988003E0C94 /* FeastedAPI.swift */; };
+		0C865E991C87D7C200790C51 /* MealRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C865E981C87D7C200790C51 /* MealRequest.swift */; };
+		0C865E9B1C87DDFA00790C51 /* AuthenticationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C865E9A1C87DDFA00790C51 /* AuthenticationRequest.swift */; };
+		0C865EA01C87EF5200790C51 /* AlamofireHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C865E9F1C87EF5200790C51 /* AlamofireHelpers.swift */; };
+		0C865EA41C87F3C500790C51 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C865EA31C87F3C500790C51 /* Ingredient.swift */; };
+		0C865EA61C87F3DB00790C51 /* Allergen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C865EA51C87F3DB00790C51 /* Allergen.swift */; };
 		0C8CDCB61C4F534600A02B9F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8CDCB51C4F534600A02B9F /* Alamofire.framework */; };
 		0C8CDCB91C4F536100A02B9F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8CDCB71C4F536100A02B9F /* Fabric.framework */; };
 		0C8CDCBA1C4F536100A02B9F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8CDCB81C4F536100A02B9F /* Crashlytics.framework */; };
@@ -17,7 +26,6 @@
 		0C9DF57F1C58894E003DBF47 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9DF57E1C58894E003DBF47 /* UserRequest.swift */; };
 		0C9DF5801C58894E003DBF47 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9DF57E1C58894E003DBF47 /* UserRequest.swift */; };
 		0C9F8BB51C4186D60016C9BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F8BB41C4186D60016C9BE /* AppDelegate.swift */; };
-		0C9F8BB71C4186D60016C9BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F8BB61C4186D60016C9BE /* ViewController.swift */; };
 		0C9F8BBA1C4186D60016C9BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9F8BB81C4186D60016C9BE /* Main.storyboard */; };
 		0C9F8BBD1C4186D60016C9BE /* Feasted.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F8BBB1C4186D60016C9BE /* Feasted.xcdatamodeld */; };
 		0C9F8BBF1C4186D60016C9BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9F8BBE1C4186D60016C9BE /* Assets.xcassets */; };
@@ -54,7 +62,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C7E8DB01C7DEBAA0017C0CD /* MealsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
+		0C7E8DB21C7DEC730017C0CD /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		0C7E8DB91C7DF02E0017C0CD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0C7E8DBB1C7E74C20017C0CD /* SplashLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashLoginViewController.swift; sourceTree = "<group>"; };
 		0C81611B1C4F4988003E0C94 /* FeastedAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeastedAPI.swift; sourceTree = "<group>"; };
+		0C865E981C87D7C200790C51 /* MealRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealRequest.swift; sourceTree = "<group>"; };
+		0C865E9A1C87DDFA00790C51 /* AuthenticationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationRequest.swift; sourceTree = "<group>"; };
+		0C865E9F1C87EF5200790C51 /* AlamofireHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHelpers.swift; sourceTree = "<group>"; };
+		0C865EA31C87F3C500790C51 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		0C865EA51C87F3DB00790C51 /* Allergen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Allergen.swift; sourceTree = "<group>"; };
 		0C8CDCB51C4F534600A02B9F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		0C8CDCB71C4F536100A02B9F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		0C8CDCB81C4F536100A02B9F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
@@ -62,7 +79,6 @@
 		0C9DF57E1C58894E003DBF47 /* UserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		0C9F8BB11C4186D60016C9BE /* Feasted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feasted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9F8BB41C4186D60016C9BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C9F8BB61C4186D60016C9BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C9F8BB91C4186D60016C9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C9F8BBC1C4186D60016C9BE /* Feasted.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Feasted.xcdatamodel; sourceTree = "<group>"; };
 		0C9F8BBE1C4186D60016C9BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,10 +134,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C7E8DAF1C7DEB830017C0CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C7E8DB01C7DEBAA0017C0CD /* MealsViewController.swift */,
+				0C7E8DB91C7DF02E0017C0CD /* LoginViewController.swift */,
+				0C7E8DBB1C7E74C20017C0CD /* SplashLoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0C865E9C1C87E9AE00790C51 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0C865E9F1C87EF5200790C51 /* AlamofireHelpers.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		0C9DF57D1C58892A003DBF47 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
 				0C9DF57E1C58894E003DBF47 /* UserRequest.swift */,
+				0C865E981C87D7C200790C51 /* MealRequest.swift */,
+				0C865E9A1C87DDFA00790C51 /* AuthenticationRequest.swift */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -152,8 +188,9 @@
 			isa = PBXGroup;
 			children = (
 				0CE6CDF61C4F441B00D625CD /* API */,
+				0C7E8DAF1C7DEB830017C0CD /* Controllers */,
+				0C865E9C1C87E9AE00790C51 /* Utilities */,
 				0C9F8BB41C4186D60016C9BE /* AppDelegate.swift */,
-				0C9F8BB61C4186D60016C9BE /* ViewController.swift */,
 				0C9F8BB81C4186D60016C9BE /* Main.storyboard */,
 				0C9F8BBE1C4186D60016C9BE /* Assets.xcassets */,
 				0C9F8BC01C4186D60016C9BE /* LaunchScreen.storyboard */,
@@ -199,6 +236,9 @@
 			children = (
 				0CE6CDFE1C4F47D500D625CD /* User.swift */,
 				0CE6CE011C4F47F300D625CD /* Token.swift */,
+				0C7E8DB21C7DEC730017C0CD /* Meal.swift */,
+				0C865EA31C87F3C500790C51 /* Ingredient.swift */,
+				0C865EA51C87F3DB00790C51 /* Allergen.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -422,15 +462,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C7E8DB31C7DEC730017C0CD /* Meal.swift in Sources */,
+				0C865EA41C87F3C500790C51 /* Ingredient.swift in Sources */,
 				0C9F8BBD1C4186D60016C9BE /* Feasted.xcdatamodeld in Sources */,
 				0CE6CDFB1C4F44F300D625CD /* AuthManager.swift in Sources */,
+				0C865EA01C87EF5200790C51 /* AlamofireHelpers.swift in Sources */,
 				0C9DF57F1C58894E003DBF47 /* UserRequest.swift in Sources */,
+				0C865E991C87D7C200790C51 /* MealRequest.swift in Sources */,
 				0C8CDCC01C4F595A00A02B9F /* FeastedService.swift in Sources */,
-				0C9F8BB71C4186D60016C9BE /* ViewController.swift in Sources */,
+				0C7E8DBC1C7E74C20017C0CD /* SplashLoginViewController.swift in Sources */,
+				0C865EA61C87F3DB00790C51 /* Allergen.swift in Sources */,
 				0CE6CE021C4F47F300D625CD /* Token.swift in Sources */,
 				0CE6CDFF1C4F47D500D625CD /* User.swift in Sources */,
 				0C81611C1C4F4988003E0C94 /* FeastedAPI.swift in Sources */,
+				0C7E8DB11C7DEBAA0017C0CD /* MealsViewController.swift in Sources */,
+				0C865E9B1C87DDFA00790C51 /* AuthenticationRequest.swift in Sources */,
 				0C9F8BB51C4186D60016C9BE /* AppDelegate.swift in Sources */,
+				0C7E8DBA1C7DF02E0017C0CD /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +627,7 @@
 			baseConfigurationReference = B0F67907F528092F17256960 /* Pods-Feasted.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -596,6 +645,7 @@
 			baseConfigurationReference = B848A1FAB7AF0026E8BA285E /* Pods-Feasted.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

@@ -9,9 +9,10 @@
 import Foundation
 import Alamofire
 
-enum UserRequest : URLRequestConvertible {
+enum UserRequest : URLRequestConvertible
+{
     static let baseURLString = FeastedAPI.sharedInstance.serviceEndpoint()
-    static var OAuthToken: String? = FeastedAPI.sharedInstance.bearerToken()
+    static var bearerToken: String? = FeastedAPI.sharedInstance.bearerToken()
     
     case CreateUser([String: AnyObject])
     case ReadUser(Int)
@@ -51,7 +52,7 @@ enum UserRequest : URLRequestConvertible {
         let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path))
         mutableURLRequest.HTTPMethod = method.rawValue
         
-        if let token = UserRequest.OAuthToken {
+        if let token = UserRequest.bearerToken {
             mutableURLRequest.setValue(token, forHTTPHeaderField: "Authorization")
         }
         
