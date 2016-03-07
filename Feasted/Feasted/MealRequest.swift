@@ -19,7 +19,8 @@ enum MealRequest : URLRequestConvertible
     case CreateMeal(meal:[String : AnyObject])
     case DestroyMeal(mealId:String)
     
-    private var method : Alamofire.Method {
+    private var method : Alamofire.Method
+    {
         switch self {
         case .GetMeal:
             return .GET
@@ -32,7 +33,8 @@ enum MealRequest : URLRequestConvertible
         }
     }
     
-    private var path : String {
+    private var path : String
+    {
         switch self {
         case .GetMeal(let mealId):
             return "/meals/\(mealId)"
@@ -46,41 +48,44 @@ enum MealRequest : URLRequestConvertible
     }
     
     // Parameters for request
-    private var parameters : [String:AnyObject]? {
+    var parameters : [String:AnyObject]?
+    {
         switch self {
-            
         case .GetMeal(let mealId):
             return ["meal_id" : mealId]
-            
         case .GetMeals(let lat, let lng, let range, let limit):
-            let nillableParameters = [
-                "lat":lat,
-                "lng":lng,
-                "range":range,
-                "limit":limit]
-            return nillableParameters
+            var params = ["lat":lat, "lng":lng]
             
+            if range >= 0.0 {
+                params["range"] = range
+            }
+            
+            if limit <= 0.0 {
+                params["limit"] = limit
+            }
+            
+            return params
         case .CreateMeal(let meal):
             return ["":meal]
-            
         case .DestroyMeal(let mealId):
             return ["mealId":mealId]
         }
     }
     
-    var URLRequest : NSMutableURLRequest {
+    var URLRequest : NSMutableURLRequest
+    {
         let URL = NSURL(string: MealRequest.baseURLString)!
-        let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path))
+        var mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path))
         mutableURLRequest.HTTPMethod = method.rawValue
         
         if let token = MealRequest.bearerToken {
             mutableURLRequest.setValue(token, forHTTPHeaderField: "Authorization")
         }
         
-        switch self {
-            
-        default:
-            return mutableURLRequest
+        if let params = self.parameters {
+            mutableURLRequest = ParameterEncoding.URL.encode(mutableURLRequest, parameters: params).0
         }
+        
+        return mutableURLRequest
     }
 }

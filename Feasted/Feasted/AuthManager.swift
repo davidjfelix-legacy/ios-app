@@ -11,7 +11,6 @@ import Foundation
 class AuthManager: NSObject
 {
     // Private vars
-    private var defaults : NSUserDefaults
     
     // Public static strings
     let BEARER_TOKEN : String = "bearer_token"
@@ -19,24 +18,27 @@ class AuthManager: NSObject
     // Public vars
     var activeUser : User?
     
-    override init() {
-        self.defaults = NSUserDefaults.standardUserDefaults()
+    override init()
+    {
         activeUser = nil
     }
     
-    func saveBearerToken(bearerToken : String) {
+    func saveBearerToken(bearerToken : String)
+    {
         let token : String = "Bearer \(bearerToken)"
-        self.defaults.setObject(token, forKey: BEARER_TOKEN)
-        self.defaults.synchronize()
+        NSUserDefaults.standardUserDefaults().setObject(token, forKey: BEARER_TOKEN)
+        NSUserDefaults.standardUserDefaults().synchronize()
     }
     
-    func getBearerToken() -> String {
-        return self.defaults.stringForKey(BEARER_TOKEN)!
+    func getBearerToken() -> String?
+    {
+        return NSUserDefaults.standardUserDefaults().stringForKey(BEARER_TOKEN)
     }
     
-    func unauthenticateUser() {
+    func unauthenticateUser()
+    {
         activeUser = nil
-        self.defaults.removeObjectForKey(BEARER_TOKEN)
-        self.defaults.synchronize()
+        NSUserDefaults.standardUserDefaults().removeObjectForKey(BEARER_TOKEN)
+        NSUserDefaults.standardUserDefaults().synchronize()
     }
 }

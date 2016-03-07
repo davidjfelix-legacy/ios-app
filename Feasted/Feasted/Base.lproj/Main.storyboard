@@ -150,6 +150,9 @@
                                 <state key="normal" title="MEALS!!!!!">
                                     <color key="titleColor" red="0.95686274510000002" green="0.50588235290000005" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2Ol-am-cRW" kind="show" id="4aO-lP-tis"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLf-kB-3EP">
                                 <rect key="frame" x="163" y="268" width="275" height="44"/>
@@ -187,6 +190,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K8x-ac-HQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2797" y="476"/>
+        </scene>
+        <!--MealsViewController-->
+        <scene sceneID="AeA-oG-p0c">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Meals" storyboardName="Meals" referencedIdentifier="MealsViewController" id="2Ol-am-cRW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uSp-2c-Q8L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3407.5" y="276"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7nx-cg-nS3">

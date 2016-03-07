@@ -8,7 +8,7 @@
         <!--Meals View Controller-->
         <scene sceneID="0rn-9K-2T2">
             <objects>
-                <viewController id="fPe-z5-Xev" customClass="MealsViewController" customModule="Feasted" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MealsViewController" id="fPe-z5-Xev" customClass="MealsViewController" customModule="Feasted" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C13-Ul-LA0"/>
                         <viewControllerLayoutGuide type="bottom" id="Cnz-NY-4uW"/>

@@ -6,9 +6,11 @@
 //  Copyright © 2016 Dinner Solutions LLC. All rights reserved.
 //
 
-import UIKit
+import CoreLocation
 import Foundation
 import Google
+import UIKit
+
 
 class MealsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
@@ -25,6 +27,7 @@ class MealsViewController: UIViewController, UITableViewDataSource, UITableViewD
     {
         self.dataSource = Array<Meal>()
         self.tableView.registerNib(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        self.api.getMeals(CLLocationCoordinate2D(latitude: 39.15, longitude: -84.42), radius: 10)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
@@ -37,6 +40,9 @@ class MealsViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         if let meal : Meal = self.dataSource![indexPath.row] {
             cell!.mealTitleLabel.text = meal.name
+            cell?.costLabel.text = "$" + "\(meal.price)"
+            cell!.areaCodeLabel.text = "41011"
+            cell!.pickupTimeLabel.text = "Ready from 3:00 - 4:30pm"
         }
         
         return cell!
