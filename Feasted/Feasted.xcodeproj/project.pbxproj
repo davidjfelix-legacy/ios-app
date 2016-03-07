@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C2D57341C8D09430010A6B2 /* Meals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D57331C8D09430010A6B2 /* Meals.storyboard */; };
+		0C2D573B1C8D0B9E0010A6B2 /* MealsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D57391C8D0B9E0010A6B2 /* MealsTableViewCell.swift */; };
+		0C2D573C1C8D0B9E0010A6B2 /* MealsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D573A1C8D0B9E0010A6B2 /* MealsTableViewCell.xib */; };
 		0C7E8DB11C7DEBAA0017C0CD /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E8DB01C7DEBAA0017C0CD /* MealsViewController.swift */; };
 		0C7E8DB31C7DEC730017C0CD /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E8DB21C7DEC730017C0CD /* Meal.swift */; };
 		0C7E8DBA1C7DF02E0017C0CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E8DB91C7DF02E0017C0CD /* LoginViewController.swift */; };
@@ -64,6 +66,8 @@
 
 /* Begin PBXFileReference section */
 		0C2D57331C8D09430010A6B2 /* Meals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Meals.storyboard; sourceTree = "<group>"; };
+		0C2D57391C8D0B9E0010A6B2 /* MealsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsTableViewCell.swift; sourceTree = "<group>"; };
+		0C2D573A1C8D0B9E0010A6B2 /* MealsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MealsTableViewCell.xib; sourceTree = "<group>"; };
 		0C7E8DB01C7DEBAA0017C0CD /* MealsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
 		0C7E8DB21C7DEC730017C0CD /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		0C7E8DB91C7DF02E0017C0CD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				0C9F8BC01C4186D60016C9BE /* LaunchScreen.storyboard */,
 				0C9F8BB81C4186D60016C9BE /* Main.storyboard */,
 				0C2D57331C8D09430010A6B2 /* Meals.storyboard */,
+				0C2D57391C8D0B9E0010A6B2 /* MealsTableViewCell.swift */,
+				0C2D573A1C8D0B9E0010A6B2 /* MealsTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 				0C9F8BC21C4186D60016C9BE /* LaunchScreen.storyboard in Resources */,
 				0C2D57341C8D09430010A6B2 /* Meals.storyboard in Resources */,
 				0C9F8BBF1C4186D60016C9BE /* Assets.xcassets in Resources */,
+				0C2D573C1C8D0B9E0010A6B2 /* MealsTableViewCell.xib in Resources */,
 				0C9F8BBA1C4186D60016C9BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +503,7 @@
 				0CE6CDFF1C4F47D500D625CD /* User.swift in Sources */,
 				0C81611C1C4F4988003E0C94 /* FeastedAPI.swift in Sources */,
 				0C7E8DB11C7DEBAA0017C0CD /* MealsViewController.swift in Sources */,
+				0C2D573B1C8D0B9E0010A6B2 /* MealsTableViewCell.swift in Sources */,
 				0C865E9B1C87DDFA00790C51 /* AuthenticationRequest.swift in Sources */,
 				0C9F8BB51C4186D60016C9BE /* AppDelegate.swift in Sources */,
 				0C7E8DBA1C7DF02E0017C0CD /* LoginViewController.swift in Sources */,
