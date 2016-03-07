@@ -49,7 +49,7 @@
                             <constraint firstItem="tDM-Jz-beP" firstAttribute="leading" secondItem="bQs-VY-Ai3" secondAttribute="leading" id="zZt-TH-EPL"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long Meal Title Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7o-2c-Eh6">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long Meal Title Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7o-2c-Eh6" userLabel="MealTitleLabel">
                         <rect key="frame" x="33" y="174" width="457" height="18"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="18" id="FrN-FX-31u"/>
@@ -99,8 +99,8 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$XX.XX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzg-PK-JN8" userLabel="PickupTimeLabel">
-                        <rect key="frame" x="198" y="200" width="40" height="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$XX.XX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzg-PK-JN8" userLabel="PickupTimeLabel">
+                        <rect key="frame" x="198" y="200" width="259" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="9MZ-nL-Kxp"/>
                             <constraint firstAttribute="width" constant="40" id="PLr-nG-XnH"/>
@@ -133,6 +133,7 @@
                     <constraint firstItem="rQU-i3-wLf" firstAttribute="centerY" secondItem="sN3-lw-1N6" secondAttribute="centerY" id="Sny-W3-kCd"/>
                     <constraint firstItem="bQs-VY-Ai3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="25" id="Tva-zS-0UE"/>
                     <constraint firstItem="fMC-Om-q9k" firstAttribute="centerY" secondItem="sN3-lw-1N6" secondAttribute="centerY" id="UDg-fj-ehI"/>
+                    <constraint firstItem="jum-k2-QvG" firstAttribute="leading" secondItem="pzg-PK-JN8" secondAttribute="trailing" constant="8" id="Ub6-ni-30i"/>
                     <constraint firstItem="IC1-13-HWC" firstAttribute="centerY" secondItem="sN3-lw-1N6" secondAttribute="centerY" id="YaJ-9N-jmN"/>
                     <constraint firstItem="fMC-Om-q9k" firstAttribute="leading" secondItem="IC1-13-HWC" secondAttribute="trailing" constant="8" id="d82-gu-01K"/>
                     <constraint firstItem="pzg-PK-JN8" firstAttribute="leading" secondItem="VwJ-5m-qlk" secondAttribute="trailing" constant="8" id="dru-OO-l6m"/>
@@ -146,6 +147,20 @@
                     <constraint firstItem="pzg-PK-JN8" firstAttribute="centerY" secondItem="sN3-lw-1N6" secondAttribute="centerY" id="nPV-Ez-N6I"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="areaCodeImageView" destination="fMC-Om-q9k" id="Etc-Pf-3bA"/>
+                <outlet property="areaCodeLabel" destination="rQU-i3-wLf" id="vVL-4Q-bJM"/>
+                <outlet property="costImageView" destination="sN3-lw-1N6" id="3FI-lk-071"/>
+                <outlet property="costLabel" destination="IC1-13-HWC" id="arE-mK-b1M"/>
+                <outlet property="glutenFreeImageView" destination="jum-k2-QvG" id="Vdg-fH-H9R"/>
+                <outlet property="imageContainerView" destination="bQs-VY-Ai3" id="Tyl-aK-fnD"/>
+                <outlet property="mealImageView" destination="tDM-Jz-beP" id="N4c-BX-xHG"/>
+                <outlet property="mealTitleLabel" destination="Y7o-2c-Eh6" id="sXe-Be-EnD"/>
+                <outlet property="pickupTimeImageView" destination="VwJ-5m-qlk" id="YMx-CI-he5"/>
+                <outlet property="pickupTimeLabel" destination="pzg-PK-JN8" id="ojA-hx-5e5"/>
+                <outlet property="profileImageView" destination="yRO-vH-cdH" id="xPh-Og-a9Q"/>
+                <outlet property="savedImageView" destination="OC0-4j-Jd1" id="iI8-aW-b6I"/>
+            </connections>
             <point key="canvasLocation" x="337.5" y="415"/>
         </tableViewCell>
     </objects>
