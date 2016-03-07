@@ -11,15 +11,15 @@ import Alamofire
 
 enum MealRequest : URLRequestConvertible
 {
-    static let baseURLString = FeastedAPI.sharedInstance.serviceEndpoint()
-    static var bearerToken : String? = FeastedAPI.sharedInstance.bearerToken()
+    private static let baseURLString = FeastedAPI.sharedInstance.serviceEndpoint()
+    private static var bearerToken : String? = FeastedAPI.sharedInstance.bearerToken()
     
-    case GetMeal(String)
-    case GetMeals(Double, Double, Double, Double)
-    case CreateMeal([String : AnyObject])
-    case DestroyMeal(String)
+    case GetMeal(mealId:String)
+    case GetMeals(lat:Double, lng:Double, radius:Double, limit:Double)
+    case CreateMeal(meal:[String : AnyObject])
+    case DestroyMeal(mealId:String)
     
-    var method : Alamofire.Method {
+    private var method : Alamofire.Method {
         switch self {
         case .GetMeal:
             return .GET
@@ -32,7 +32,7 @@ enum MealRequest : URLRequestConvertible
         }
     }
     
-    var path : String {
+    private var path : String {
         switch self {
         case .GetMeal(let mealId):
             return "/meals/\(mealId)"
@@ -46,7 +46,7 @@ enum MealRequest : URLRequestConvertible
     }
     
     // Parameters for request
-    var parameters : [String:AnyObject]? {
+    private var parameters : [String:AnyObject]? {
         switch self {
             
         case .GetMeal(let mealId):

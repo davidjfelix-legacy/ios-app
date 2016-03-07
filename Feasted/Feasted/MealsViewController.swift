@@ -17,6 +17,7 @@ class MealsViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     // Data
     private var dataSource : Array<Meal>?
+    private let api : FeastedAPI = FeastedAPI.sharedInstance
     
     private let cellIdentifier : String = "MealsTableViewCell"
     
@@ -32,6 +33,10 @@ class MealsViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         if cell == nil {
             cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as? MealsTableViewCell
+        }
+        
+        if let meal : Meal = self.dataSource![indexPath.row] {
+            cell!.mealTitleLabel.text = meal.name
         }
         
         return cell!

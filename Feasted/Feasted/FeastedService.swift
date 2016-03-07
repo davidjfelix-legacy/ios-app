@@ -9,8 +9,8 @@
 import Foundation
 import Alamofire
 
-class FeastedService: NSObject {
-    
+class FeastedService : NSObject
+{
     // private vars
     private(set) var isProduction : Bool!
     
@@ -18,11 +18,13 @@ class FeastedService: NSObject {
     private static let SERVER : String = "http://api.davidjfelix.com/v0"
     private static let STAGE_SERVER : String = "http://api.davidjfelix.com/v0"
     
-    override init() {
+    override init()
+    {
         self.isProduction = false
     }
     
-    func getServiceEnpoint() -> String {
+    func getServiceEnpoint() -> String
+    {
         return (self.isProduction == true) ? FeastedService.SERVER : FeastedService.STAGE_SERVER
     }
 }

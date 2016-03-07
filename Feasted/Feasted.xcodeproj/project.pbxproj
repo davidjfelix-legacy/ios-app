@@ -10,6 +10,7 @@
 		0C2D57341C8D09430010A6B2 /* Meals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D57331C8D09430010A6B2 /* Meals.storyboard */; };
 		0C2D573B1C8D0B9E0010A6B2 /* MealsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D57391C8D0B9E0010A6B2 /* MealsTableViewCell.swift */; };
 		0C2D573C1C8D0B9E0010A6B2 /* MealsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D573A1C8D0B9E0010A6B2 /* MealsTableViewCell.xib */; };
+		0C2D573F1C8D25AC0010A6B2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D573E1C8D25AC0010A6B2 /* LocationManager.swift */; };
 		0C7E8DB11C7DEBAA0017C0CD /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E8DB01C7DEBAA0017C0CD /* MealsViewController.swift */; };
 		0C7E8DB31C7DEC730017C0CD /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E8DB21C7DEC730017C0CD /* Meal.swift */; };
 		0C7E8DBA1C7DF02E0017C0CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E8DB91C7DF02E0017C0CD /* LoginViewController.swift */; };
@@ -68,6 +69,7 @@
 		0C2D57331C8D09430010A6B2 /* Meals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Meals.storyboard; sourceTree = "<group>"; };
 		0C2D57391C8D0B9E0010A6B2 /* MealsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsTableViewCell.swift; sourceTree = "<group>"; };
 		0C2D573A1C8D0B9E0010A6B2 /* MealsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MealsTableViewCell.xib; sourceTree = "<group>"; };
+		0C2D573E1C8D25AC0010A6B2 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		0C7E8DB01C7DEBAA0017C0CD /* MealsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
 		0C7E8DB21C7DEC730017C0CD /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		0C7E8DB91C7DF02E0017C0CD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				0CE6CDFA1C4F44F300D625CD /* AuthManager.swift */,
 				0C81611B1C4F4988003E0C94 /* FeastedAPI.swift */,
 				0C8CDCBF1C4F595A00A02B9F /* FeastedService.swift */,
+				0C2D573E1C8D25AC0010A6B2 /* LocationManager.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				0C2D573B1C8D0B9E0010A6B2 /* MealsTableViewCell.swift in Sources */,
 				0C865E9B1C87DDFA00790C51 /* AuthenticationRequest.swift in Sources */,
 				0C9F8BB51C4186D60016C9BE /* AppDelegate.swift in Sources */,
+				0C2D573F1C8D25AC0010A6B2 /* LocationManager.swift in Sources */,
 				0C7E8DBA1C7DF02E0017C0CD /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
