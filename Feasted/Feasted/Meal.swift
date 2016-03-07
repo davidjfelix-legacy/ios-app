@@ -30,7 +30,8 @@ class Meal : Mappable
     
     required init?(_ map: Map) { }
     
-    func mapping(map: Map) {
+    func mapping(map: Map)
+    {
         mealId <- map["meal_id"]
         name <- map["name"]
         description <- map["description"]

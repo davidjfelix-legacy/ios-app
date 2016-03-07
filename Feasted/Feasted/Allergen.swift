@@ -17,7 +17,8 @@ class Allergen : Mappable
     
     required init?(_ map: Map) { }
     
-    func mapping(map: Map) {
+    func mapping(map: Map)
+    {
         allergenId <- map["allergen_id"]
         name <- map["name"]
         description <- map["description"]

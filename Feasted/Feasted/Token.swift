@@ -16,12 +16,14 @@ class Token: Mappable
     
     required init?(_ map: Map) { }
     
-    func mapping(map: Map) {
+    func mapping(map: Map)
+    {
         type <- map["type"]
         text <- map["text"]
     }
     
-    func getToken() -> String {
+    func getToken() -> String
+    {
         return "\(self.type) \(self.text)"
     }
 }
