@@ -150,9 +150,6 @@
                                 <state key="normal" title="MEALS!!!!!">
                                     <color key="titleColor" red="0.95686274510000002" green="0.50588235290000005" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="aqG-dk-Ddt" kind="show" id="bSD-Pv-Ni2"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLf-kB-3EP">
                                 <rect key="frame" x="163" y="268" width="275" height="44"/>
@@ -190,47 +187,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K8x-ac-HQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2797" y="476"/>
-        </scene>
-        <!--Meals View Controller-->
-        <scene sceneID="2Sm-Kd-ZNQ">
-            <objects>
-                <viewController id="aqG-dk-Ddt" customClass="MealsViewController" customModule="Feasted" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="U66-NH-v0c"/>
-                        <viewControllerLayoutGuide type="bottom" id="rFM-Ta-pZO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yxx-Ja-CaJ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="149" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="veQ-zo-T58">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MealTableViewCell" rowHeight="149" id="HY2-ul-c7o">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="149"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HY2-ul-c7o" id="514-yv-zLy">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="149"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="veQ-zo-T58" secondAttribute="trailing" id="Crm-ZT-flE"/>
-                            <constraint firstItem="veQ-zo-T58" firstAttribute="top" secondItem="U66-NH-v0c" secondAttribute="bottom" id="ddD-xb-Qr1"/>
-                            <constraint firstItem="veQ-zo-T58" firstAttribute="leading" secondItem="yxx-Ja-CaJ" secondAttribute="leading" id="nrM-k2-hQl"/>
-                            <constraint firstItem="rFM-Ta-pZO" firstAttribute="top" secondItem="veQ-zo-T58" secondAttribute="bottom" id="tmI-jC-ku6"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tfm-wa-L4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3662" y="-136"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7nx-cg-nS3">
