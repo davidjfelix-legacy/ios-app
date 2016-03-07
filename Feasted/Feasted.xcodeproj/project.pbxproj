@@ -146,7 +146,6 @@
 				0C9F8BC01C4186D60016C9BE /* LaunchScreen.storyboard */,
 				0C9F8BB81C4186D60016C9BE /* Main.storyboard */,
 				0C2D57331C8D09430010A6B2 /* Meals.storyboard */,
-				0C2D57391C8D0B9E0010A6B2 /* MealsTableViewCell.swift */,
 				0C2D573A1C8D0B9E0010A6B2 /* MealsTableViewCell.xib */,
 			);
 			name = Views;
@@ -163,10 +162,19 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		0C7E8DAF1C7DEB830017C0CD /* Controllers */ = {
+		0C2D573D1C8D11B40010A6B2 /* MealControllers */ = {
 			isa = PBXGroup;
 			children = (
 				0C7E8DB01C7DEBAA0017C0CD /* MealsViewController.swift */,
+				0C2D57391C8D0B9E0010A6B2 /* MealsTableViewCell.swift */,
+			);
+			name = MealControllers;
+			sourceTree = "<group>";
+		};
+		0C7E8DAF1C7DEB830017C0CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C2D573D1C8D11B40010A6B2 /* MealControllers */,
 				0C7E8DB91C7DF02E0017C0CD /* LoginViewController.swift */,
 				0C7E8DBB1C7E74C20017C0CD /* SplashLoginViewController.swift */,
 			);

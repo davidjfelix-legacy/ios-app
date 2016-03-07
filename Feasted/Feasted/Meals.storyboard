@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Meals View Controller-->
@@ -21,35 +20,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="340" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HGG-lx-68T">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MealTableViewCell" rowHeight="340" id="r89-4m-7BZ">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="340"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r89-4m-7BZ" id="jIN-cp-uZe">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="339.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRe-Dq-iaS">
-                                                    <rect key="frame" x="33" y="28" width="534" height="140"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="140" id="B73-H8-7cQ"/>
-                                                    </constraints>
-                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="22" y="17" width="353" height="140"/>
-                                                    </variation>
-                                                </view>
-                                            </subviews>
-                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="yRe-Dq-iaS" secondAttribute="trailing" constant="25" id="2qE-iW-yBf"/>
-                                                <constraint firstItem="yRe-Dq-iaS" firstAttribute="top" secondItem="jIN-cp-uZe" secondAttribute="topMargin" constant="20" id="h51-MO-Qi5"/>
-                                                <constraint firstItem="yRe-Dq-iaS" firstAttribute="leading" secondItem="jIN-cp-uZe" secondAttribute="leadingMargin" constant="25" id="nef-8d-X85"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
-                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fPe-z5-Xev" id="aJX-Pc-1lN"/>
+                                    <outlet property="delegate" destination="fPe-z5-Xev" id="byK-0Q-BfA"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,6 +34,9 @@
                             <constraint firstItem="HGG-lx-68T" firstAttribute="leading" secondItem="xyR-zB-TFa" secondAttribute="leading" id="gN5-rv-SlV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="HGG-lx-68T" id="xpn-cv-d7s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3z-W2-GAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
