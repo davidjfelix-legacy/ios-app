@@ -11,19 +11,41 @@ import Google
 
 class LoginViewController: GAITrackedViewController
 {
-    @IBOutlet weak var confirmLoginOrRegisterButton: UIButton!
+    // View Outlets
+    // UIButtons
+    @IBOutlet weak var facebookButton: UIButton!
+    @IBOutlet weak var googleButton: GIDSignInButton!
+    @IBOutlet weak var actionButton: UIButton!
+    
+    // UILabels
+    @IBOutlet weak var actionTitleLabel: UILabel!
     
     override func viewDidLoad()
     {
-        self.navigationController?.navigationItem.backBarButtonItem?.title = "HOME";
+        super.viewDidLoad()
+        setupNavigation()
     }
     
     func setupNavigation()
     {
-        
+        self.navigationController?.navigationItem.backBarButtonItem?.title = "HOME";
     }
     
     func dismissController()
+    {
+        if self.navigationController != nil {
+            self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+        } else {
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+    }
+    
+    @IBAction func facebookButtonTapped(sender: AnyObject)
+    {
+        // TODO: Login or Register with Facebook here
+    }
+    
+    @IBAction func googleButtonTapped(sender: AnyObject)
     {
         
     }

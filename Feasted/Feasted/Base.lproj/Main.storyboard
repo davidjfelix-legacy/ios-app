@@ -93,6 +93,12 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="jI2-ix-Q93"/>
+                    <connections>
+                        <outlet property="loginButton" destination="hrV-un-ccv" id="Ksm-fa-NQY"/>
+                        <outlet property="logoImageView" destination="5JF-dU-oBk" id="Xaz-dH-XbD"/>
+                        <outlet property="logoTitleLabel" destination="fHI-Tb-7jo" id="Xgb-DL-ehn"/>
+                        <outlet property="registerButton" destination="eqv-vH-6Jd" id="SEN-rE-X1g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,7 +116,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSc-1u-YTe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSc-1u-YTe" customClass="I">
                                 <rect key="frame" x="163" y="337" width="275" height="44"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -119,9 +125,12 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <inset key="imageEdgeInsets" minX="-8" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="REGISTER WITH GOOGLE" image="google.png">
+                                <state key="normal" title="REGISTER WITH GOOGLE">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="googleButtonTapped:" destination="GRK-Q8-kMM" eventType="touchUpInside" id="G9y-c3-San"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQp-yn-ORH">
                                 <rect key="frame" x="227" y="520" width="147" height="30"/>
@@ -163,9 +172,12 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="REGISTER WITH FACEBOOK" image="google.png">
+                                <state key="normal" title="REGISTER WITH FACEBOOK">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="facebookButtonTapped:" destination="GRK-Q8-kMM" eventType="touchUpInside" id="aKV-jc-e7s"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -184,7 +196,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="acg-jI-tk5"/>
                     <connections>
-                        <outlet property="confirmLoginOrRegisterButton" destination="GQp-yn-ORH" id="oCL-1j-Hg0"/>
+                        <outlet property="actionButton" destination="GQp-yn-ORH" id="5qU-pS-eQi"/>
+                        <outlet property="actionTitleLabel" destination="Xg9-f8-qtg" id="o2W-TU-a6n"/>
+                        <outlet property="facebookButton" destination="aLf-kB-3EP" id="Ylh-Pp-bkm"/>
+                        <outlet property="googleButton" destination="oSc-1u-YTe" id="wn3-J5-xqo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K8x-ac-HQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -218,9 +233,6 @@
             <point key="canvasLocation" x="1157" y="476"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="google.png" width="18" height="18"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="NP2-37-EAv"/>
     </inferredMetricsTieBreakers>

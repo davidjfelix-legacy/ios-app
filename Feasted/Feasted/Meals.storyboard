@@ -34,6 +34,7 @@
                             <constraint firstItem="HGG-lx-68T" firstAttribute="leading" secondItem="xyR-zB-TFa" secondAttribute="leading" id="gN5-rv-SlV"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <outlet property="tableView" destination="HGG-lx-68T" id="xpn-cv-d7s"/>
                     </connections>

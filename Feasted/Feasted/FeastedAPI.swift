@@ -7,8 +7,11 @@
 //
 
 import Alamofire
+import AlamofireObjectMapper
 import CoreLocation
 import Foundation
+import ObjectMapper
+
 
 class FeastedAPI
 {
@@ -38,15 +41,29 @@ class FeastedAPI
         return self.authManager.getBearerToken()
     }
     
-    func getMeals(location : CLLocationCoordinate2D, radius : Double)
+    func getMeals(location : CLLocationCoordinate2D, radius : Double, completion: (meals: Array<Meal>?, error: NSError?) -> Void)
     {
-        // -> (meals: Array<Meal>, error: NSError)
         let mealRequest = MealRequest.GetMeals(lat: location.latitude, lng: location.longitude, radius: radius, limit: 10.0)
-        Alamofire.request(mealRequest).response { (request, response, responseObject, error) -> Void in
-            print(request)
-            print(response)
-            print(responseObject)
-            print(error)
+        Alamofire.request(mealRequest)
+            .responseJSON(options: NSJSONReadingOptions.AllowFragments) { (response) -> Void in
+                
+                switch response.result {
+                case .Success(let json):
+                    let mealsJSON = json as! NSDictionary
+                    let meals : [NSDictionary] = mealsJSON.objectForKey("meals") as! [NSDictionary]
+                    var mealArray = [Meal]()
+                    
+                    for jsonMeal in meals {
+                        let meal : Meal = Mapper<Meal>().map(jsonMeal)!
+                        mealArray.append(meal)
+                    }
+                    
+                    completion(meals: mealArray, error: nil)
+                    break
+                case .Failure(let error):
+                    completion(meals: nil, error: error)
+                    break
+                }
         }
     }
 }

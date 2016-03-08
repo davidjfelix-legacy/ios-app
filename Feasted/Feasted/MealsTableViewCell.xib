@@ -55,7 +55,7 @@
                             <constraint firstAttribute="height" constant="18" id="FrN-FX-31u"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sN3-lw-1N6" userLabel="CostImageView">
@@ -86,7 +86,7 @@
                             <constraint firstAttribute="width" constant="40" id="ZZH-1J-0q2"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="41011" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQU-i3-wLf" userLabel="AreaCodeLabel">
@@ -96,23 +96,8 @@
                             <constraint firstAttribute="width" constant="40" id="nRl-bg-0n1"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$XX.XX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzg-PK-JN8" userLabel="PickupTimeLabel">
-                        <rect key="frame" x="198" y="200" width="259" height="15"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="15" id="9MZ-nL-Kxp"/>
-                            <constraint firstAttribute="width" constant="40" id="PLr-nG-XnH"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="PLr-nG-XnH"/>
-                            </mask>
-                        </variation>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jum-k2-QvG" userLabel="GlutenFreeImageView">
                         <rect key="frame" x="465" y="195" width="25" height="25"/>
@@ -121,8 +106,22 @@
                             <constraint firstAttribute="height" constant="25" id="sZJ-IS-3aT"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$XX.XX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzg-PK-JN8" userLabel="PickupTimeLabel">
+                        <rect key="frame" x="198" y="200" width="259" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="9MZ-nL-Kxp"/>
+                            <constraint firstAttribute="width" constant="40" id="PLr-nG-XnH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PLr-nG-XnH"/>
+                            </mask>
+                        </variation>
+                    </label>
                 </subviews>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="sN3-lw-1N6" firstAttribute="top" secondItem="Y7o-2c-Eh6" secondAttribute="bottom" constant="8" id="6Mh-6H-R35"/>
                     <constraint firstItem="Y7o-2c-Eh6" firstAttribute="top" secondItem="bQs-VY-Ai3" secondAttribute="bottom" constant="8" id="9QU-aO-UiN"/>
