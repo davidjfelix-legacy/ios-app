@@ -58,21 +58,21 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sN3-lw-1N6" userLabel="CostImageView">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_attach_money" translatesAutoresizingMaskIntoConstraints="NO" id="sN3-lw-1N6" userLabel="CostImageView">
                         <rect key="frame" x="33" y="200" width="15" height="15"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="15" id="M4i-Yr-1Yh"/>
                             <constraint firstAttribute="height" constant="15" id="eNc-lg-Cjh"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fMC-Om-q9k" userLabel="AreaCodeImageView">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_location_on" translatesAutoresizingMaskIntoConstraints="NO" id="fMC-Om-q9k" userLabel="AreaCodeImageView">
                         <rect key="frame" x="104" y="200" width="15" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="0ee-sz-SLI"/>
                             <constraint firstAttribute="width" constant="15" id="D46-mQ-hql"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VwJ-5m-qlk" userLabel="PickupTimeImageView">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_local_dining" translatesAutoresizingMaskIntoConstraints="NO" id="VwJ-5m-qlk" userLabel="PickupTimeImageView">
                         <rect key="frame" x="175" y="200" width="15" height="15"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="15" id="TVb-iA-tde"/>
@@ -163,4 +163,9 @@
             <point key="canvasLocation" x="337.5" y="415"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="ic_attach_money" width="24" height="24"/>
+        <image name="ic_local_dining" width="24" height="24"/>
+        <image name="ic_location_on" width="24" height="24"/>
+    </resources>
 </document>
