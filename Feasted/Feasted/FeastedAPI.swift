@@ -44,31 +44,31 @@ class FeastedAPI
     func getMeals(location : CLLocationCoordinate2D, radius : Double, completion: (meals: Array<Meal>?, error: NSError?) -> Void)
     {
         let mealRequest = MealRequest.GetMeals(lat: location.latitude, lng: location.longitude, radius: radius, limit: 10.0)
-        Alamofire.request(mealRequest)
-            .responseJSON(options: NSJSONReadingOptions.AllowFragments) { (response) -> Void in
-                
-                switch response.result {
-                case .Success(let json):
-                    let mealsJSON = json as! NSDictionary
-                    let meals : [NSDictionary] = mealsJSON.objectForKey("meals") as! [NSDictionary]
-                    var mealArray = [Meal]()
-                    
-                    for jsonMeal in meals {
-                        let meal : Meal = Mapper<Meal>().map(jsonMeal)!
-                        mealArray.append(meal)
-                    }
-                    
-                    completion(meals: mealArray, error: nil)
-                    break
-                case .Failure(let error):
-                    completion(meals: nil, error: error)
-                    break
-                }
-        }
+        Alamofire.request(mealRequest).responseArray("meals", completionHandler: { (response: Response<[Meal], NSError>) -> Void in
+            switch response.result {
+            case .Success(let meals):
+                completion(meals: meals, error: nil)
+                break
+            case .Failure(let error):
+                completion(meals: nil, error: error)
+                break
+            }
+        })
     }
     
-    func createMeal(meal : Meal, completion: () -> Void)
+    func createMeal(meal : Meal, completion: (meal: Meal?, error: NSError?) -> Void)
     {
-        
+        let mealJSON = Mapper<Meal>().toJSON(meal)
+        let request = MealRequest.CreateMeal(meal: mealJSON)
+        Alamofire.request(request).responseObject("meal") { (response: Response<Meal, NSError>) -> Void in
+            switch response.result {
+            case .Success(let meal):
+                completion(meal: meal, error: nil)
+                break
+            case .Failure(let error):
+                completion(meal: nil, error: error)
+                break
+            }
+        }
     }
 }
