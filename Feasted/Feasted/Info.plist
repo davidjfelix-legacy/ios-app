@@ -61,26 +61,24 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>s3.amazonaws.com/dinnersolutions</key>
-			<dict/>
 			<key>NSIncludesSubdomains</key>
 			<true/>
-			<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
-			<false/>
 			<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
 			<false/>
-			<key>api.davidjfelix.com</key>
+			<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+			<false/>
+			<key>akamaihd.net</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
 				<true/>
 				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
 				<false/>
-				<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
 			</dict>
-			<key>akamaihd.net</key>
+			<key>api.davidjfelix.com</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
 				<true/>
 				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
 				<false/>
@@ -99,6 +97,8 @@
 				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
 				<false/>
 			</dict>
+			<key>s3.amazonaws.com/dinnersolutions</key>
+			<dict/>
 		</dict>
 	</dict>
 	<key>UILaunchStoryboardName</key>

@@ -66,4 +66,9 @@ class FeastedAPI
                 }
         }
     }
+    
+    func createMeal(meal : Meal, completion: () -> Void)
+    {
+        
+    }
 }
