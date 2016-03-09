@@ -34,6 +34,7 @@ PODS:
   - GoogleSymbolUtilities (1.0.3)
   - GoogleUtilities (1.1.0):
     - GoogleSymbolUtilities (~> 1.0.0)
+  - Material (1.35.3)
   - ObjectMapper (1.1.5)
 
 DEPENDENCIES:
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - AlamofireObjectMapper (~> 2.1)
   - Google/Analytics
   - Google/SignIn
+  - Material (~> 1.0)
   - ObjectMapper (~> 1.1)
 
 SPEC CHECKSUMS:
@@ -57,6 +59,7 @@ SPEC CHECKSUMS:
   GoogleSignIn: 79929b51e6299c69f1197bbd9c7a1367d523ecd8
   GoogleSymbolUtilities: 82ad9f93d3615244b3f4ce440f5ab2515e8b4f56
   GoogleUtilities: 8ed9134debe11719097881711464752900668f10
+  Material: 2989ce92c519fbdc265525819c37df0851701c4c
   ObjectMapper: 528b1a6677a6acac7747edd508576983e76a9148
 
 COCOAPODS: 0.39.0
