@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0079F71C8FABCF00CC9FED /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0079F61C8FABCF00CC9FED /* RegisterViewController.swift */; };
+		0C0079F91C8FAEB700CC9FED /* UIViewController+DS_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0079F81C8FAEB700CC9FED /* UIViewController+DS_Extensions.swift */; };
 		0C2D57341C8D09430010A6B2 /* Meals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D57331C8D09430010A6B2 /* Meals.storyboard */; };
 		0C2D573B1C8D0B9E0010A6B2 /* MealsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D57391C8D0B9E0010A6B2 /* MealsTableViewCell.swift */; };
 		0C2D573C1C8D0B9E0010A6B2 /* MealsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D573A1C8D0B9E0010A6B2 /* MealsTableViewCell.xib */; };
@@ -66,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C0079F61C8FABCF00CC9FED /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		0C0079F81C8FAEB700CC9FED /* UIViewController+DS_Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+DS_Extensions.swift"; sourceTree = "<group>"; };
 		0C2D57331C8D09430010A6B2 /* Meals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Meals.storyboard; sourceTree = "<group>"; };
 		0C2D57391C8D0B9E0010A6B2 /* MealsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsTableViewCell.swift; sourceTree = "<group>"; };
 		0C2D573A1C8D0B9E0010A6B2 /* MealsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MealsTableViewCell.xib; sourceTree = "<group>"; };
@@ -142,6 +146,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C0079F51C8FABB700CC9FED /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				0C7E8DB91C7DF02E0017C0CD /* LoginViewController.swift */,
+				0C0079F61C8FABCF00CC9FED /* RegisterViewController.swift */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
 		0C2D57321C8D09220010A6B2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,8 +189,8 @@
 		0C7E8DAF1C7DEB830017C0CD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0C0079F51C8FABB700CC9FED /* Authentication */,
 				0C2D573D1C8D11B40010A6B2 /* MealControllers */,
-				0C7E8DB91C7DF02E0017C0CD /* LoginViewController.swift */,
 				0C7E8DBB1C7E74C20017C0CD /* SplashLoginViewController.swift */,
 			);
 			name = Controllers;
@@ -187,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				0C865E9F1C87EF5200790C51 /* AlamofireHelpers.swift */,
+				0C0079F81C8FAEB700CC9FED /* UIViewController+DS_Extensions.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -505,12 +519,14 @@
 				0C9F8BBD1C4186D60016C9BE /* Feasted.xcdatamodeld in Sources */,
 				0CE6CDFB1C4F44F300D625CD /* AuthManager.swift in Sources */,
 				0C865EA01C87EF5200790C51 /* AlamofireHelpers.swift in Sources */,
+				0C0079F91C8FAEB700CC9FED /* UIViewController+DS_Extensions.swift in Sources */,
 				0C9DF57F1C58894E003DBF47 /* UserRequest.swift in Sources */,
 				0C865E991C87D7C200790C51 /* MealRequest.swift in Sources */,
 				0C8CDCC01C4F595A00A02B9F /* FeastedService.swift in Sources */,
 				0C7E8DBC1C7E74C20017C0CD /* SplashLoginViewController.swift in Sources */,
 				0C865EA61C87F3DB00790C51 /* Allergen.swift in Sources */,
 				0CE6CE021C4F47F300D625CD /* Token.swift in Sources */,
+				0C0079F71C8FABCF00CC9FED /* RegisterViewController.swift in Sources */,
 				0CE6CDFF1C4F47D500D625CD /* User.swift in Sources */,
 				0C81611C1C4F4988003E0C94 /* FeastedAPI.swift in Sources */,
 				0C7E8DB11C7DEBAA0017C0CD /* MealsViewController.swift in Sources */,

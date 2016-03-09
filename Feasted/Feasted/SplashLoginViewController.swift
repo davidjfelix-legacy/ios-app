@@ -19,17 +19,19 @@ class SplashLoginViewController : GAITrackedViewController
     
     private let kRegisterSegueIdentifier = "registerSegue"
     private let kLoginSegueIdentifier = "loginSegue"
+    private let kAnalyticsScreenName = "splash_login_screen"
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.roundButtonCorner(self.loginButton)
-        self.roundButtonCorner(self.registerButton)
+        self.screenName = kAnalyticsScreenName
     }
     
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(animated)
+        self.roundButtonCorner(self.loginButton)
+        self.roundButtonCorner(self.registerButton)
         self.navigationController?.navigationBar.hidden = true;
     }
     
@@ -42,16 +44,5 @@ class SplashLoginViewController : GAITrackedViewController
     private func roundButtonCorner(button : UIButton)
     {
         button.layer.cornerRadius = 3.0
-    }
-    
-    // MARK - Navigation
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
-    {
-        if segue.identifier == kLoginSegueIdentifier {
-            
-        } else if segue.identifier == kRegisterSegueIdentifier {
-            
-        }
     }
 }

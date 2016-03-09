@@ -9,26 +9,35 @@
 import Foundation
 import Google
 
+
 class LoginViewController: GAITrackedViewController
 {
     // View Outlets
     // UIButtons
     @IBOutlet weak var facebookButton: UIButton!
-    @IBOutlet weak var googleButton: GIDSignInButton!
+    @IBOutlet weak var googleButton: UIButton!
     @IBOutlet weak var actionButton: UIButton!
     
     // UILabels
     @IBOutlet weak var actionTitleLabel: UILabel!
     
+    private let kAnalyticsScreenName = "login"
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        self.screenName = kAnalyticsScreenName
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated: animated)
         setupNavigation()
     }
     
     func setupNavigation()
     {
-        self.navigationController?.navigationItem.backBarButtonItem?.title = "HOME";
+        self.navigationItem.backBarButtonItem?.title = "HOME"
     }
     
     func dismissController()

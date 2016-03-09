@@ -6,8 +6,9 @@
 //  Copyright © 2016 Dinner Solutions LLC. All rights reserved.
 //
 
-import Foundation
 import Alamofire
+import Foundation
+
 
 public protocol ResponseObjectSerializable {
     init?(response: NSHTTPURLResponse, representation: AnyObject)
