@@ -6,11 +6,10 @@
 //  Copyright © 2016 Dinner Solutions LLC. All rights reserved.
 //
 
+import UIKit
 import Foundation
-import Google
 
-
-class SplashLoginViewController : GAITrackedViewController
+class SplashLoginViewController : UIViewController
 {
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var logoTitleLabel: UILabel!
@@ -24,7 +23,7 @@ class SplashLoginViewController : GAITrackedViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.screenName = kAnalyticsScreenName
+//        self.screenName = kAnalyticsScreenName
     }
     
     override func viewWillAppear(animated: Bool)

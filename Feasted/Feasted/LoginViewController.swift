@@ -6,11 +6,10 @@
 //  Copyright © 2016 Dinner Solutions LLC. All rights reserved.
 //
 
+import UIKit
 import Foundation
-import Google
 
-
-class LoginViewController: GAITrackedViewController
+class LoginViewController : UIViewController
 {
     // View Outlets
     // UIButtons
@@ -26,12 +25,12 @@ class LoginViewController: GAITrackedViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.screenName = kAnalyticsScreenName
+//        self.screenName = kAnalyticsScreenName
     }
     
     override func viewWillAppear(animated: Bool)
     {
-        super.viewWillAppear(animated: animated)
+        super.viewWillAppear(animated)
         setupNavigation()
     }
     

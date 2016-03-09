@@ -9,12 +9,11 @@
 import CoreData
 import Crashlytics
 import Fabric
-import Google
 import UIKit
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate
+class AppDelegate: UIResponder, UIApplicationDelegate
 {
     var window: UIWindow?
     
@@ -35,15 +34,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate
         return true
     }
     
-    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!)
-    {
-        if (error == nil) {
-            // Perform any operations on signed in user here.
-            // ...
-        } else {
-            print("\(error.localizedDescription)")
-        }
-    }
+//    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!)
+//    {
+//        if (error == nil) {
+//            // Perform any operations on signed in user here.
+//            // ...
+//        } else {
+//            print("\(error.localizedDescription)")
+//        }
+//    }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

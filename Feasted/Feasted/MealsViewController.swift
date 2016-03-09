@@ -10,7 +10,6 @@ import Alamofire
 import AlamofireImage
 import CoreLocation
 import Foundation
-import Google
 import UIKit
 
 

@@ -151,6 +151,7 @@
 			children = (
 				0C7E8DB91C7DF02E0017C0CD /* LoginViewController.swift */,
 				0C0079F61C8FABCF00CC9FED /* RegisterViewController.swift */,
+				0C7E8DBB1C7E74C20017C0CD /* SplashLoginViewController.swift */,
 			);
 			name = Authentication;
 			sourceTree = "<group>";
@@ -180,8 +181,8 @@
 		0C2D573D1C8D11B40010A6B2 /* MealControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0C7E8DB01C7DEBAA0017C0CD /* MealsViewController.swift */,
 				0C2D57391C8D0B9E0010A6B2 /* MealsTableViewCell.swift */,
+				0C7E8DB01C7DEBAA0017C0CD /* MealsViewController.swift */,
 			);
 			name = MealControllers;
 			sourceTree = "<group>";
@@ -191,7 +192,6 @@
 			children = (
 				0C0079F51C8FABB700CC9FED /* Authentication */,
 				0C2D573D1C8D11B40010A6B2 /* MealControllers */,
-				0C7E8DBB1C7E74C20017C0CD /* SplashLoginViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";

@@ -6,11 +6,10 @@
 //  Copyright © 2016 Dinner Solutions LLC. All rights reserved.
 //
 
+import UIKit
 import Foundation
-import Google
 
-
-class RegisterViewController : GAITrackedViewController
+class RegisterViewController : UIViewController
 {
     
 }
